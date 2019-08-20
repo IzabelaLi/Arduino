@@ -1,0 +1,46 @@
+*****************************************************************************
+BT&RFID Locker is a project based on Arduino microcontroller.
+
+This device lets you open a door secured by mechanical lock (door latch) that
+is controlled by servo, using RFID and Bluetooth technology. The latch will 
+close automatically if an optical sensor detects that the door is shut.
+
+For controlling the lock by RFID, it is necessary to connect the RFID module. 
+The process of unlocking the door will occur after rapproaching an appropriate 
+RFID tag. The program lets the user to decide which tags will be authorized.
+After launching the device the user specifies the master tag, thanks to which 
+it will be possible to add or remove other tags. Master tag cannot be changed 
+then, only after reset or re-lounching the program. The microcontroller will 
+inform the user about the need of scanning a master tag, the status of the 
+scanned tags (whether they are authorized or no) and about posision of the door
+(if they are not shut) 
+
+For controlling the lock by BT, there is necessary to connect the Bluetooth
+module, which allows the smartphone to contact with the microcontroller by
+application. After launching the device and specifing the master tag, it will 
+be possible to open the lock by application created in Mitt App Inventor 2.
+Before doing that the user has to connect the module with smartphone. If those
+devies are already paired, there is possible to connect them in the application,
+by choosing -Połącz- button. There should appear a list of available devices.
+Then, after choosing the right one, the status of connection at the very top of
+the screen should change from "Nie połączono" to "Połączono". To open the lock
+it is necessary to enter the right password (Otwórz) and confirm it by pressing
+-OK- button. If the password is correct then atfer clicking the -Otwórz- button
+the lock will open. 
+
+
+*****************************************************************************
+Components:
+
+Arduino Uno®
+Servo Micro Tower Pro SG 90
+Optical sensor TCRT 5000
+RFID Module RC522
+Bluetooth Module HC-06 ZS 040
+LCD 16x2 HD44780
+Potentiometer 10K
+RFID Tags
+Smartphone with Android system
+LED and resistor (optionally)
+Arduino Sensor Shield V4.0 (optionally)
+*****************************************************************************
