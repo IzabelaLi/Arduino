@@ -24,7 +24,7 @@ devies are already paired, there is possible to connect them in the application,
 by choosing -Połącz- button. There should appear a list of available devices.
 Then, after choosing the right one, the status of connection at the very top of
 the screen should change from "Nie połączono" to "Połączono". To open the lock
-it is necessary to enter the right password (Otwórz) and confirm it by pressing
+it is necessary to enter the right password (otworz) and confirm it by pressing
 -OK- button. If the password is correct then atfer clicking the -Otwórz- button
 the lock will open. 
 
